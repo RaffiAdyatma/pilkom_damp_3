@@ -1,0 +1,77 @@
+<!-- <!doctype html> -->
+
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        @font-face {
+        font-family: 'Satoshi';
+        src: url('/fonts/Satoshi-Regular.woff2') format('woff2'),
+            url('/fonts/Satoshi-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        }
+    </style> 
+</head>
+
+<body class="bg-[#081B58] font-[Satoshi]">
+
+<div id="container" class="flex flex-col gap-[20px] justify-end h-full">
+
+    <img src="/layout/template/asset/Ellipse 3.png" 
+        class="min-w-[233.74px] fixed right-[-80px] top-[-50px] z-[-2]">
+
+
+    <div id="top" class="grid grid-cols-9 place-items-center px-[20px]">
+
+        <!-- Judul -->
+        <p class="col-start-5 col-end-6 text-white text-[25px] font-black">Template</p>
+
+        <div class="col-start-8 bg-[url(/layout/template/asset/spriteTop.png)] size-[50px] bg-position-[0_0]"></div>
+        <div class="col-start-9 bg-[url(/layout/template/asset/spriteTop.png)] size-[50px] bg-position-[-100_0]"></div>
+    </div>
+
+    
+    <div class="bg-white rounded-t-[25px] h-[88%]">
+        <!-- Isi -->
+    </div>
+
+
+    <!-- footer -->
+    <div class="bg-white fixed bottom-0 right-0 left-0 flex flex-row justify-around items-end">
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="beranda" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="beranda" 
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(/layout/template/asset/footerSprites.png)] bg-position-[0_0] peer-checked:bg-position-[0_-30]">
+            </label>
+            <label for="beranda">Beranda</label>
+        </div>
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="pengumuman" name="navbar" class="peer sr-only" autocomplete="off" checked>
+            <label for="pengumuman"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(/layout/template/asset/footerSprites.png)] bg-position-[-30_0] peer-checked:bg-position-[-30_-30]">
+            </label>
+            <label  for="pengumuman">Pengumuman</label>
+        </div>
+
+        <div class="flex flex-col items-center w-[100px]">
+            <input type="radio" id="forum" name="navbar" class="peer sr-only" autocomplete="off">
+            <label for="forum"
+                class="w-[30px] h-[30px] bg-no-repeat bg-[url(/layout/template/asset/footerSprites.png)] bg-position-[-60_0] peer-checked:bg-position-[-60_-30]">
+            </label>
+            <label  for="forum">Forum</label>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
